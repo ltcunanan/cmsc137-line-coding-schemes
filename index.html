@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <div>
+        Binary String: <input type="number" id="input">
+        <select id="choices">
+		  <option value="1">UNIPOLAR</option>
+		  <option value="2">POLAR-NRZ</option> 
+		  <!--double chart NRZ-L (missing: NRZ-I)  -->
+		  <option value="3">POLAR-RZ</option>
+		  <option value="4">POLAR-BIPHASE</option>
+		  <!-- double chart Manchester (missing: differential Manchester ) -->
+		  <option value="5">BIPOLAR</option>
+		  <!-- double chart AMI (missing: pseudoternary)-->
+		  <option value="6">MULTILEVEL-2B1Q</option>
+		</select>
+		<button onclick="checkInput()">Confirm</button>
+    </div>
+    <canvas id="line-chart"></canvas>
+
+    <script src="chart.js"></script>
+
+</html>
